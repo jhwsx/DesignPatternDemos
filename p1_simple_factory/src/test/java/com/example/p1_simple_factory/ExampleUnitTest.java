@@ -1,5 +1,7 @@
 package com.example.p1_simple_factory;
 
+import com.example.p1_simple_factory._1_originalexample.Test;
+
 import org.junit.Test;
 
 import static org.junit.Assert.*;
