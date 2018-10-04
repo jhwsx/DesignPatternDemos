@@ -1,4 +1,4 @@
-package com.example.p2_strategy.originalexample;
+package com.example.p2_strategy.simplefactory_example;
 
 import android.app.Activity;
 import android.content.Context;
@@ -24,7 +24,7 @@ import java.util.List;
  * @author wzc
  * @date 2018/10/2
  */
-public class MarketCashSystemActivity1 extends Activity {
+public class MarketCashSystemActivity2 extends Activity {
 
     private EditText mEtPrice;
     private EditText mEtQuantity;
@@ -38,14 +38,14 @@ public class MarketCashSystemActivity1 extends Activity {
     private Spinner mSpinner;
 
     public static void start(Context context) {
-        Intent starter = new Intent(context, MarketCashSystemActivity1.class);
+        Intent starter = new Intent(context, MarketCashSystemActivity2.class);
         context.startActivity(starter);
     }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_market_cash_system_1);
+        setContentView(R.layout.activity_market_cash_system_2);
         initViews();
         initData();
     }
@@ -54,34 +54,17 @@ public class MarketCashSystemActivity1 extends Activity {
     private String mCalculatedWay = "正常收费";
 
     private void initData() {
-        mAdapter = new ArrayAdapter<>(MarketCashSystemActivity1.this,
+        mAdapter = new ArrayAdapter<>(MarketCashSystemActivity2.this,
                 android.R.layout.simple_list_item_1, mData);
         mListView.setAdapter(mAdapter);
         ArrayAdapter<CharSequence> spinnerAdapter
-                = ArrayAdapter.createFromResource(this, R.array.calculate_ways, android.R.layout.simple_spinner_item);
+                = ArrayAdapter.createFromResource(this, R.array.calculate_ways_2, android.R.layout.simple_spinner_item);
         spinnerAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         mSpinner.setAdapter(spinnerAdapter);
         mSpinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
                 mCalculatedWay = (String) parent.getItemAtPosition(position);
-                switch (position) {
-                    case 0:
-                        mDiscount = 1;
-                        break;
-                    case 1:
-                        mDiscount = 0.8;
-                        break;
-                    case 2:
-                        mDiscount = 0.7;
-                        break;
-                    case 3:
-                        mDiscount = 0.5;
-                        break;
-                    default:
-                        mDiscount = 1;
-                        break;
-                }
             }
 
             @Override
@@ -95,10 +78,11 @@ public class MarketCashSystemActivity1 extends Activity {
                 String price = mEtPrice.getText().toString();
                 String quantity = mEtQuantity.getText().toString();
                 if (TextUtils.isEmpty(price) || TextUtils.isEmpty(quantity)) {
-                    Toast.makeText(MarketCashSystemActivity1.this, "单价或数量不可以为空", Toast.LENGTH_LONG).show();
+                    Toast.makeText(MarketCashSystemActivity2.this, "单价或数量不可以为空", Toast.LENGTH_LONG).show();
                     return;
                 }
-                double result = Double.valueOf(price) * Integer.valueOf(quantity) * mDiscount;
+                CashSuper cashSuper = CashFactory.createCashAccept(mCalculatedWay);
+                double result = cashSuper.acceptCash(Double.valueOf(price) * Integer.valueOf(quantity));
                 mTotal += result;
                 mData.add("单价: " + price + ", 数量: " + quantity + " " + mCalculatedWay + " 合计:" + result);
                 mAdapter.notifyDataSetChanged();

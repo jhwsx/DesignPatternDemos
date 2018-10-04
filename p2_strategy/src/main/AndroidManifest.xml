@@ -16,6 +16,7 @@
             </intent-filter>
         </activity>
         <activity android:name=".originalexample.MarketCashSystemActivity1"/>
+        <activity android:name=".simplefactory_example.MarketCashSystemActivity2"/>
     </application>
 
 </manifest>

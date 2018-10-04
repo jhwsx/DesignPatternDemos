@@ -1,3 +1,17 @@
 <resources>
     <string name="app_name">p2_strategy</string>
+    <string-array name="calculate_ways">
+        <item>正常收费</item>
+        <item>打八折</item>
+        <item>打七折</item>
+        <item>打五折</item>
+    </string-array>
+    <string-array name="calculate_ways_2">
+        <item>正常收费</item>
+        <item>打八折</item>
+        <item>打七折</item>
+        <item>打五折</item>
+        <item>满300返100</item>
+        <item>满200返50</item>
+    </string-array>
 </resources>

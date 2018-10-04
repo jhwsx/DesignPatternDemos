@@ -14,4 +14,10 @@
         android:text="MarketCashSystemActivity1"
         android:id="@+id/btn_marketcashsystem_1"/>
 
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="MarketCashSystemActivity2"
+        android:id="@+id/btn_marketcashsystem_2"/>
+
 </LinearLayout>
