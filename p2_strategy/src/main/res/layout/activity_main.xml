@@ -20,4 +20,16 @@
         android:text="MarketCashSystemActivity2"
         android:id="@+id/btn_marketcashsystem_2"/>
 
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="MarketCashSystemActivity3"
+        android:id="@+id/btn_marketcashsystem_3"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="MarketCashSystemActivity4"
+        android:id="@+id/btn_marketcashsystem_4"/>
+
 </LinearLayout>

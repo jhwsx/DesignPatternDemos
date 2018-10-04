@@ -17,6 +17,8 @@
         </activity>
         <activity android:name=".originalexample.MarketCashSystemActivity1"/>
         <activity android:name=".simplefactory_example.MarketCashSystemActivity2"/>
+        <activity android:name=".strategy_example.MarketCashSystemActivity3"/>
+        <activity android:name=".strategy_simplefactory_example.MarketCashSystemActivity4"/>
     </application>
 
 </manifest>
