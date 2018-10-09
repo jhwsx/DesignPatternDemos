@@ -1,5 +1,6 @@
 include ':p0'
 include ':p1_simple_factory'
 include ':p2_strategy'
+include  ':p3_srp'
 include ':p14_observer'
 include ':p16_state'
