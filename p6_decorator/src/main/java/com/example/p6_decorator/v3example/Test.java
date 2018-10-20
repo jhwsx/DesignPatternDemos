@@ -8,13 +8,13 @@ public class Test {
     public static void main(String[] args) {
         Person person = new Person("小菜");
         TShirts tShirts = new TShirts();
-        tShirts.setPerson(person);
-
         BigTrousers bigTrousers = new BigTrousers();
-        bigTrousers.setPerson(tShirts);
-
         Sneakers sneakers = new Sneakers();
-        sneakers.setPerson(bigTrousers);
+
+        tShirts.decorate(person);
+        bigTrousers.decorate(tShirts);
+        sneakers.decorate(bigTrousers);
+
 
         sneakers.show();
     }

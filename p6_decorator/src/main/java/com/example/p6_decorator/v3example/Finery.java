@@ -11,7 +11,7 @@ public  class Finery extends Person {
     protected Person mPerson;
 
 
-    public void setPerson(Person person) {
+    public void decorate(Person person) {
         mPerson = person;
     }
 
