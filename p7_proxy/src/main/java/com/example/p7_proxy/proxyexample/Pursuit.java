@@ -7,7 +7,7 @@ package com.example.p7_proxy.proxyexample;
 public class Pursuit implements GiveGift {
     private SchoolGirl mMm;
 
-    public Pursuit(SchoolGirl schoolGirl) {
+    public Pursuit(SchoolGirl schoolGirl) { // 这里实际上是通过 Proxy 传进的 SchoolGirl 对象来依赖的。
         mMm = schoolGirl;
     }
 
