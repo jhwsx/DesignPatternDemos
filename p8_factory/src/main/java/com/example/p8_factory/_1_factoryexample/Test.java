@@ -36,5 +36,11 @@ public class Test {
         powerOperation.setNumberA(2);
         powerOperation.setNumberB(3);
         System.out.println(powerOperation.getResult());
+        // 取余
+        RemaindFactory remaindFactory = new RemaindFactory();
+        Operation remaindOperation = remaindFactory.createOperation();
+        remaindOperation.setNumberA(5);
+        remaindOperation.setNumberB(2);
+        System.out.println(remaindOperation.getResult());
     }
 }
