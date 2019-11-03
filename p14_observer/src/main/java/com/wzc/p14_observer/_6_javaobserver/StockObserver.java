@@ -1,4 +1,4 @@
-package com.wzc.p14_observer.javaobserver;
+package com.wzc.p14_observer._6_javaobserver;
 
 import java.util.Observable;
 import java.util.Observer;
@@ -7,11 +7,10 @@ import java.util.Observer;
  * @author wzc
  * @date 2018/4/19
  */
-public class NBAObserver implements Observer {
-
+public class StockObserver implements Observer {
     private String mName;
 
-    public NBAObserver(String name) {
+    public StockObserver(String name) {
         mName = name;
     }
 
@@ -19,7 +18,7 @@ public class NBAObserver implements Observer {
     public void update(Observable o, Object arg) {
         if (arg instanceof String) {
             String action = (String) arg;
-            System.out.println(action + ", " + mName + ", 关闭NBA直播, 继续工作!");
+            System.out.println(action + ", " + mName + ", 关闭股票行情, 继续工作!");
         }
     }
 }

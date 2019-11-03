@@ -1,4 +1,4 @@
-package com.wzc.p14_observer.javaobserver;
+package com.wzc.p14_observer._6_javaobserver;
 
 import java.util.Observer;
 
@@ -6,7 +6,7 @@ import java.util.Observer;
  * @author wzc
  * @date 2018/4/19
  */
-public class Client {
+public class Test {
     public static void main(String[] args) {
         // 通知者
         Secretary observable = new Secretary();

@@ -1,4 +1,4 @@
-package com.wzc.p14_observer.delegate;
+package com.wzc.p14_observer._5_delegate;
 
 /**
  * 抽象通知类

@@ -1,4 +1,4 @@
-package com.wzc.p14_observer.javaobserver;
+package com.wzc.p14_observer._6_javaobserver;
 
 import java.util.Observable;
 

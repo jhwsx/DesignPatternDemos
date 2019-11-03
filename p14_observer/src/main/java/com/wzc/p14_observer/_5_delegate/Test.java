@@ -1,10 +1,11 @@
-package com.wzc.p14_observer.delegate;
+package com.wzc.p14_observer._5_delegate;
 
 /**
+ * https://www.jianshu.com/p/c067410d95ca
  * @author wzc
  * @date 2018/4/19
  */
-public class Client {
+public class Test {
     public static void main(String[] args) {
         // 通知者
         Subject subject = new Secretary();
