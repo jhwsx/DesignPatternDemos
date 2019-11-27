@@ -1,4 +1,4 @@
-package com.wzc.p16_state.veryexample;
+package com.wzc.p16_state._4_state_example;
 
 /**
  * 睡眠状态

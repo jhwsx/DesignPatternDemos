@@ -1,4 +1,4 @@
-package com.wzc.p16_state.originalexample;
+package com.wzc.p16_state._4_state_example;
 
 /**
  * @author wzc

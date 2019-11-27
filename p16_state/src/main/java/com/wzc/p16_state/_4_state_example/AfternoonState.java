@@ -1,4 +1,4 @@
-package com.wzc.p16_state.veryexample;
+package com.wzc.p16_state._4_state_example;
 
 
 /**
@@ -13,6 +13,7 @@ public class AfternoonState extends State {
         if (work.getHour() < 17) {
             System.out.println("当前时间: " + work.getHour() + " 点 下午状态还不错,继续努力.");
         } else {
+            // 超过 17 点, 则转入晚间工作状态
             work.setState(new EveningState());
             work.writeProgram();
         }

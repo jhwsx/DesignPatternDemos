@@ -1,11 +1,14 @@
-package com.wzc.p16_state.originalexample;
+package com.wzc.p16_state._2_class_example;
 
 /**
+ * 工作状态
+ *
  * @author wzc
  * @date 2018/9/19
  */
 public class Work {
     private int hour;
+    private boolean finish = false;
 
     public int getHour() {
         return hour;
@@ -23,7 +26,6 @@ public class Work {
         this.finish = finish;
     }
 
-    private boolean finish = false;
 
     public void writeProgram() {
         if (hour < 12) {

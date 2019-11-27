@@ -1,4 +1,4 @@
-package com.wzc.p16_state.veryexample;
+package com.wzc.p16_state._4_state_example;
 
 /**
  * @author wzc
@@ -9,6 +9,11 @@ public class Work {
      * 钟点属性,状态转换的依据
      */
     private int hour;
+    /**
+     * 任务完成属性,是否能下班的依据
+     */
+    private boolean finish = false;
+
     private State currentState;
 
     public Work() {
@@ -31,11 +36,6 @@ public class Work {
     public void setFinish(boolean finish) {
         this.finish = finish;
     }
-
-    /**
-     * 任务完成属性,是否能下班的依据
-     */
-    private boolean finish = false;
 
     public void writeProgram() {
         currentState.writeProgram(this);
