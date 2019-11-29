@@ -1,4 +1,4 @@
-package com.wzc.p17_adapter._3_adapter_example;
+package com.wzc.p17_adapter._2_class_adapter;
 
 /**
  * 中锋

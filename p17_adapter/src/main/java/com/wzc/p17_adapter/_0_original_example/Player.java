@@ -1,4 +1,4 @@
-package com.wzc.p17_adapter._2_original_example;
+package com.wzc.p17_adapter._0_original_example;
 
 /**
  * 球员

@@ -1,4 +1,4 @@
-package com.wzc.p17_adapter._1_theory;
+package com.wzc.p17_adapter._1_object_adapter._1_theory;
 
 /**
  * 需要适配的类

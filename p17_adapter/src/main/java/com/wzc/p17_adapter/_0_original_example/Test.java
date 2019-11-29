@@ -1,4 +1,4 @@
-package com.wzc.p17_adapter._3_adapter_example;
+package com.wzc.p17_adapter._0_original_example;
 
 /**
  * 此类相当于教练对球员做的技术安排
@@ -12,30 +12,21 @@ public class Test {
         b.attack();
         Player m = new Guards("Jordan");
         m.attack();
-//        Player ym = new Center("Yaoming");
-//        ym.attack();
-//        ym.defense();
-
-        Player ym = new Translater("姚明");
+        Player ym = new Center("Yaoming");
         ym.attack();
         ym.defense();
     }
 }
-// 适配前
+
 /*
 Forwards James attack
 Guards Jordan attack
 Center Yaoming attack
 Center Yaoming defense
 */
-// 适配后
-/*
-Forwards James attack
-Guards Jordan attack
-中锋 姚明 进攻
-中锋 姚明 防守
-*/
+
 /**
  * 总结:
- * 1, 使用了适配器的例子
+ * 1, 这个例子的问题在于姚明听不懂教练下达的英语安排.
+ * 2, 姚明是外籍中锋, 需要有翻译者来适配.
  */

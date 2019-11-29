@@ -1,4 +1,4 @@
-package com.wzc.p17_adapter._1_theory;
+package com.wzc.p17_adapter._1_object_adapter._1_theory;
 
 /**
  * 客户所期待的接口. 目标可以是具体类,抽象类,接口
