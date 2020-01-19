@@ -41,6 +41,12 @@ public class Singleton {
  * 实质上没有被初始化，这样就有问题了。
  * 参考：Java并发编程：volatile关键字解析 https://www.cnblogs.com/dolphin0520/p/3920373.html
  * volatile 关键字的存在意义就是保证了执行命令不会被重排序。
+ * 下边是来自 google 的解释：
+ * The value of a volatile variable will never be cached, and all writes and reads will be done to and
+ * from the main memory. This helps make sure the value of INSTANCE is always up-to-date and the same
+ * to all execution threads. It means that changes made by one thread to INSTANCE are visible to all
+ * other threads immediately, and you don't get a situation where, say, two threads each update the
+ * same entity in a cache, which would create a problem.
  * 2, 解释一下代码中 1 的作用是什么？
  * 这个判空操作是为了效率考虑的，避免不必要的持有锁的操作。
  * 3，解释一下代码中 2 的作用是什么？
