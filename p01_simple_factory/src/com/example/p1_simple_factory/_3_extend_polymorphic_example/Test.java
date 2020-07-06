@@ -22,3 +22,9 @@ public class Test {
         System.out.println("结果是: " + strResult);
     }
 }
+
+/**
+ * 总结:
+ * 1, 使用了多态,把一个大的 Operation 类分成了多个继承于新的 Operation 类的子类.
+ * 使用父类引用 Operation 指向子类对象, 来创建子类实例对象.
+ */
