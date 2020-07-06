@@ -1,4 +1,4 @@
-//package com.example.p2_strategy.originalexample;
+package com.example.p2_strategy.originalexample;//package com.example.p2_strategy.originalexample;
 //
 //import android.app.Activity;
 //import android.content.Context;

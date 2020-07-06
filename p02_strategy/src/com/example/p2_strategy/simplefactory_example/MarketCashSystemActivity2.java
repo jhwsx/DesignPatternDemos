@@ -1,4 +1,4 @@
-//package com.example.p2_strategy.simplefactory_example;
+package com.example.p2_strategy.simplefactory_example;//package com.example.p2_strategy.simplefactory_example;
 //
 //import android.app.Activity;
 //import android.content.Context;

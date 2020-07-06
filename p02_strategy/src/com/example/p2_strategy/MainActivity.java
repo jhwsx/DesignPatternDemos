@@ -1,4 +1,4 @@
-//package com.example.p2_strategy;
+package com.example.p2_strategy;//package com.example.p2_strategy;
 //
 //import android.app.Activity;
 //import android.os.Bundle;
