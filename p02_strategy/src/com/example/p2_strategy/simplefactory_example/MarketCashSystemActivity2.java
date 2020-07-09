@@ -115,3 +115,8 @@ package com.example.p2_strategy.simplefactory_example;//package com.example.p2_s
 //        mSpinner = (Spinner) findViewById(R.id.spinner);
 //    }
 //}
+
+/**
+ * 总结:
+ * 1, 简单工厂方式的实现, 解决了对象创建的问题; 但是, 以后每次维护或扩展收费方式都需要改动这个工厂.
+ */

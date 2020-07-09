@@ -7,6 +7,9 @@ package com.example.p2_strategy.strategy_theory;
  * @date 2018/10/4
  */
 public class Context {
+    /**
+     * 持有策略的引用
+     */
     Strategy mStrategy;
 
     /**
