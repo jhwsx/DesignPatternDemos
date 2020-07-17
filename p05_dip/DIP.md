@@ -2,7 +2,7 @@
 
 ## 定义
 
-DIP，Denpendence Inverse Principle：
+DIP，Dependency Inverse Principle：
 
 A. 高层模块不应该依赖低层模块。两个都应该依赖抽象。
 
