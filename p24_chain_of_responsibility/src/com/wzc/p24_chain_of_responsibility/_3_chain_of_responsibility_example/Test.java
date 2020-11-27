@@ -7,8 +7,11 @@ package com.wzc.p24_chain_of_responsibility._3_chain_of_responsibility_example;
  */
 public class Test {
     public static void main(String[] args) {
+        // 经理
         Manager commonManager = new CommonManager();
+        // 总监
         Manager majordomo = new Majordomo();
+        // 总经理
         Manager generalManager = new GeneralManager();
         commonManager.setSuccessor(majordomo);
         majordomo.setSuccessor(generalManager);
