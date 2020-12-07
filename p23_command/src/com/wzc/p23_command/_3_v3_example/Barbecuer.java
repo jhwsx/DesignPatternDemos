@@ -2,7 +2,8 @@ package com.wzc.p23_command._3_v3_example;
 
 /**
  * 烤肉串者
- *
+ * 是 Receiver 角色
+ * 
  * @author wangzhichao
  * @since 2019/12/08
  */

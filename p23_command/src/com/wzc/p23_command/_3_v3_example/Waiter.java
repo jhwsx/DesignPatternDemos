@@ -9,7 +9,7 @@ import java.util.Map;
  * 服务员
  * <p>
  * 负责记录订单，然后通知“烤肉串者”执行即可
- *
+ * 角色是 Invoker
  * @author wangzhichao
  * @since 2019/12/08
  */
