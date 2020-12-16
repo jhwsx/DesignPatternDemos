@@ -1,5 +1,10 @@
 package com.wzc.p28_visitor._6_businessreport_example;
 
+/**
+ * 员工抽象类
+ *
+ * 对应于 Element
+ */
 public abstract class Staff {
     private String name;
     private int kpi;

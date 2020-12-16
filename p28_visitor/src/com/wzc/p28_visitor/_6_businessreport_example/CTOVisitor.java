@@ -1,5 +1,9 @@
 package com.wzc.p28_visitor._6_businessreport_example;
-
+/**
+ * CTO
+ *
+ * 对应于具体的访问者
+ */
 public class CTOVisitor implements Visitor {
     @Override
     public void visit(Engineer engineer) {

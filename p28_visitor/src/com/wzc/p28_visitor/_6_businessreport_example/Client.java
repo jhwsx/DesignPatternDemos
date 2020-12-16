@@ -7,8 +7,8 @@ public class Client {
         Engineer john = new Engineer("john", 9, 15000);
         Engineer david = new Engineer("david", 6, 5000);
         // 项目经理
-        Manager lucy = new Manager("lucy", 10, 1);
-        Manager lily = new Manager("lily", 7, 3);
+        Manager lucy = new Manager("lucy", 10, 1, 100000.00);
+        Manager lily = new Manager("lily", 7, 3, 200000.00);
         // 登记员工信息，供领导查看报表
         BusinessReport businessReport = new BusinessReport();
         businessReport.attach(peter);
@@ -25,5 +25,9 @@ public class Client {
         System.out.println("CTO 查看业务报表：");
         CTOVisitor cto = new CTOVisitor();
         businessReport.displayReport(cto);
+        // CFO
+        System.out.println("CFO 查看业务报表：");
+        CFOVisitor cfo = new CFOVisitor();
+        businessReport.displayReport(cfo);
     }
 }
