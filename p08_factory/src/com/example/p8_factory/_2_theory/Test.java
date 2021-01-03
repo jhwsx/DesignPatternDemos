@@ -10,5 +10,9 @@ public class Test {
         ConcreteFactoryA concreteFactoryA = new ConcreteFactoryA();
         Product concreteProductA = concreteFactoryA.createProduct();
         System.out.println(concreteProductA.printName());
+        // product B
+        ConcreteFactoryB concreteFactoryB = new ConcreteFactoryB();
+        Product concreteProductB = concreteFactoryB.createProduct();
+        System.out.println(concreteProductB.printName());
     }
 }

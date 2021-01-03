@@ -8,9 +8,11 @@ public class Test {
     public static void main(String[] args) {
         User user = new User();
 
-        IFactory factory = new SqlserverFactory();
+//        IFactory factory = new SqlserverFactory();
 
 //        IFactory factory = new AccessFactory();
+
+        IFactory factory = new OracleFactory();
 
         IUser su = factory.createUser();
 

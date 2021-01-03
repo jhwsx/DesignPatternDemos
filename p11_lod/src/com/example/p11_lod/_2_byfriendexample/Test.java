@@ -1,5 +1,7 @@
 package com.example.p11_lod._2_byfriendexample;
 
+import java.util.Random;
+
 /**
  * @author wangzhichao
  * @date 2019/10/26
