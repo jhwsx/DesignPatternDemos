@@ -1,4 +1,4 @@
-package com.wzc.p16_state._5_vending_machine_example._1;
+package com.wzc.p16_state._5_vending_machine_example._1_original_example;
 
 /**
  * @author wangzhichao

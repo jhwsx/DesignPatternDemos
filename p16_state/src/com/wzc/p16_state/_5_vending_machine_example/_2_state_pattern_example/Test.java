@@ -1,4 +1,4 @@
-package com.wzc.p16_state._5_vending_machine_example._1_state_pattern;
+package com.wzc.p16_state._5_vending_machine_example._2_state_pattern_example;
 
 /**
  * https://blog.csdn.net/lmj623565791/article/details/26350617
