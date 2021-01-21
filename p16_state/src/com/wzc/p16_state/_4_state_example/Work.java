@@ -1,6 +1,7 @@
 package com.wzc.p16_state._4_state_example;
 
 /**
+ * 对应于 Context 类，它定义了客户端需要的接口，内部维护一个当前状态，并负责具体状态的切换。
  * @author wzc
  * @date 2018/9/20
  */
@@ -13,7 +14,9 @@ public class Work {
      * 任务完成属性,是否能下班的依据
      */
     private boolean finish = false;
-
+    /**
+     * 当前状态的变量
+     */
     private State currentState;
 
     public Work() {
@@ -41,6 +44,9 @@ public class Work {
         currentState.writeProgram(this);
     }
 
+    /**
+     * 切换状态
+     */
     public void setState(State state) {
         currentState = state;
     }

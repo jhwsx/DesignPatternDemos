@@ -6,27 +6,27 @@ package com.wzc.p16_state._4_state_example;
  */
 public class Test {
     public static void main(String[] args) {
-        Work emergencyProjects = new Work();
-        emergencyProjects.setHour(9);
-        emergencyProjects.writeProgram();
-        emergencyProjects.setHour(10);
-        emergencyProjects.writeProgram();
-        emergencyProjects.setHour(12);
-        emergencyProjects.writeProgram();
-        emergencyProjects.setHour(13);
-        emergencyProjects.writeProgram();
-        emergencyProjects.setHour(14);
-        emergencyProjects.writeProgram();
-        emergencyProjects.setHour(17);
-        emergencyProjects.writeProgram();
+        Work work = new Work();
+        work.setHour(9);
+        work.writeProgram();
+        work.setHour(10);
+        work.writeProgram();
+        work.setHour(12);
+        work.writeProgram();
+        work.setHour(13);
+        work.writeProgram();
+        work.setHour(14);
+        work.writeProgram();
+        work.setHour(17);
+        work.writeProgram();
 
-//        emergencyProjects.setFinish(true);
-        emergencyProjects.setFinish(false);
+//        work.setFinish(true);
+        work.setFinish(false);
 
 
-        emergencyProjects.setHour(19);
-        emergencyProjects.writeProgram();
-        emergencyProjects.setHour(22);
-        emergencyProjects.writeProgram();
+        work.setHour(19);
+        work.writeProgram();
+        work.setHour(22);
+        work.writeProgram();
     }
 }
