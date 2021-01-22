@@ -1,35 +1,8 @@
 {
 	"_type": "Project",
 	"_id": "AAAAAAFF+h6SjaM2Hec=",
-	"name": "Untitled",
+	"name": "VendingMachine",
 	"ownedElements": [
-		{
-			"_type": "UMLModel",
-			"_id": "AAAAAAFF+qBWK6M3Z8Y=",
-			"_parent": {
-				"$ref": "AAAAAAFF+h6SjaM2Hec="
-			},
-			"name": "Model",
-			"ownedElements": [
-				{
-					"_type": "UMLClassDiagram",
-					"_id": "AAAAAAFF+qBtyKM79qY=",
-					"_parent": {
-						"$ref": "AAAAAAFF+qBWK6M3Z8Y="
-					},
-					"name": "Main",
-					"defaultDiagram": true
-				},
-				{
-					"_type": "UMLClass",
-					"_id": "AAAAAAF217hdJ4H8+1Q=",
-					"_parent": {
-						"$ref": "AAAAAAFF+qBWK6M3Z8Y="
-					},
-					"name": "Class1"
-				}
-			]
-		},
 		{
 			"_type": "UMLStateMachine",
 			"_id": "AAAAAAF3IqdsVxt7O8U=",
@@ -789,12 +762,12 @@
 										"$ref": "AAAAAAF3IqqeshzMdFY="
 									},
 									"font": "Arial;13;0",
-									"left": 138,
-									"top": 305,
+									"left": 86,
+									"top": 319,
 									"width": 202.33154296875,
 									"height": 13,
-									"alpha": 1.5707963267948966,
-									"distance": 15,
+									"alpha": -2.395544281008351,
+									"distance": 42.1070065428546,
 									"hostEdge": {
 										"$ref": "AAAAAAF3IqqeshzNWsI="
 									},
@@ -884,12 +857,12 @@
 										"$ref": "AAAAAAF3Iq02fxz4ju8="
 									},
 									"font": "Arial;13;0",
-									"left": 187,
-									"top": 113,
+									"left": 151,
+									"top": 111,
 									"width": 72.62353515625,
 									"height": 13,
-									"alpha": 1.5707963267948966,
-									"distance": 15,
+									"alpha": -4.075200710621259,
+									"distance": 47.80167361086848,
 									"hostEdge": {
 										"$ref": "AAAAAAF3Iq02fxz5MtI="
 									},
@@ -1231,17 +1204,17 @@
 										"$ref": "AAAAAAF3IuCU9yMByQw="
 									},
 									"font": "Arial;13;0",
-									"left": 384,
-									"top": 211,
+									"left": 383,
+									"top": 240,
 									"width": 104.01904296875,
 									"height": 13,
-									"alpha": 1.5707963267948966,
-									"distance": 15,
+									"alpha": -1.7429864367306103,
+									"distance": 14.142135623730951,
 									"hostEdge": {
 										"$ref": "AAAAAAF3IuCU9yMCgNM="
 									},
 									"edgePosition": 1,
-									"text": "转动手柄"
+									"text": "转动手柄（10%）"
 								},
 								{
 									"_type": "EdgeLabelView",
@@ -1326,12 +1299,12 @@
 										"$ref": "AAAAAAF3IuFqXyMwJ5E="
 									},
 									"font": "Arial;13;0",
-									"left": 416,
-									"top": 92,
+									"left": 471,
+									"top": 112,
 									"width": 72.62353515625,
 									"height": 13,
-									"alpha": -0.42683363827344545,
-									"distance": 35.73513677041127,
+									"alpha": 4.17300573328466,
+									"distance": 42.05948168962618,
 									"hostEdge": {
 										"$ref": "AAAAAAF3IuFqXyMxPyM="
 									},
@@ -1421,12 +1394,12 @@
 										"$ref": "AAAAAAF3IuNzbyNuw5o="
 									},
 									"font": "Arial;13;0",
-									"left": 443,
-									"top": 328,
+									"left": 479,
+									"top": 320,
 									"width": 59.62353515625,
 									"height": 13,
-									"alpha": 1.5707963267948966,
-									"distance": 15,
+									"alpha": 2.36969474275463,
+									"distance": 46.09772228646444,
 									"hostEdge": {
 										"$ref": "AAAAAAF3IuNzbyNvmwI="
 									},
@@ -1799,7 +1772,7 @@
 									"_parent": {
 										"$ref": "AAAAAAF3IuCU9yMByQw="
 									},
-									"name": "转动手柄"
+									"name": "转动手柄（10%）"
 								}
 							]
 						},
@@ -1873,33 +1846,6 @@
 							]
 						}
 					]
-				}
-			]
-		},
-		{
-			"_type": "UMLStateMachine",
-			"_id": "AAAAAAF3ItmG8h6wv4c=",
-			"_parent": {
-				"$ref": "AAAAAAFF+h6SjaM2Hec="
-			},
-			"name": "StateMachine2",
-			"ownedElements": [
-				{
-					"_type": "UMLStatechartDiagram",
-					"_id": "AAAAAAF3ItmG8x6y4hM=",
-					"_parent": {
-						"$ref": "AAAAAAF3ItmG8h6wv4c="
-					},
-					"name": "StatechartDiagram1"
-				}
-			],
-			"regions": [
-				{
-					"_type": "UMLRegion",
-					"_id": "AAAAAAF3ItmG8x6xsWs=",
-					"_parent": {
-						"$ref": "AAAAAAF3ItmG8h6wv4c="
-					}
 				}
 			]
 		},
@@ -3177,5 +3123,6 @@
 				}
 			]
 		}
-	]
+	],
+	"author": "wangzhichao"
 }
