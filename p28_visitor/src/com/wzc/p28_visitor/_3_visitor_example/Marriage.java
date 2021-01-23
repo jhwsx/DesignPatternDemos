@@ -2,6 +2,8 @@ package com.wzc.p28_visitor._3_visitor_example;
 
 /**
  * 结婚状态类
+ * <p>
+ * 具体的访问者
  *
  * @author wangzhichao
  * @since 2019/12/15

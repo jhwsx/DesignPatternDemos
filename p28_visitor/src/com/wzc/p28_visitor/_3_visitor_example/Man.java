@@ -3,6 +3,8 @@ package com.wzc.p28_visitor._3_visitor_example;
 /**
  * 男人类
  *
+ * 具体元素类
+ *
  * @author wangzhichao
  * @since 2019/12/15
  */

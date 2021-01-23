@@ -3,6 +3,7 @@ package com.wzc.p28_visitor._3_visitor_example;
 /**
  * 人的抽象类
  *
+ * 对应于 Element，抽象元素类
  * @author wangzhichao
  * @since 2019/12/15
  */
