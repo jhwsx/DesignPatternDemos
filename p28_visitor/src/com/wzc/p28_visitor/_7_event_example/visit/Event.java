@@ -1,6 +1,8 @@
-package com.wzc.p28_visitor._7_event_example;
+package com.wzc.p28_visitor._7_event_example.visit;
 
 /**
+ * 抽象事件类
+ *
  * @author wangzhichao
  * @since 2021/1/23
  */
