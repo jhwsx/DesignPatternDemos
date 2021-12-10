@@ -11,21 +11,19 @@ public class Test {
         Command bakeMuttonCommand1 = new BakeMuttonCommand(chef);
         Command bakeMuttonCommand2 = new BakeMuttonCommand(chef);
         Command bakeChickenWingCommand = new BakeChickenWingCommand(chef);
-        Waiter xiaoer = new Waiter();
+        Waiter waiter = new Waiter();
 
         // 开门营业，顾客上门
-        xiaoer.setOrder("desk1", bakeMuttonCommand1);
-        xiaoer.setOrder("desk1", bakeMuttonCommand2);
-        xiaoer.setOrder("desk1", bakeMuttonCommand2);
-        xiaoer.setOrder("desk1", bakeMuttonCommand2);
-        xiaoer.setOrder("desk1", bakeChickenWingCommand);
-        xiaoer.myNotify();
+        waiter.setOrder("desk1", bakeMuttonCommand1);
+        waiter.setOrder("desk1", bakeMuttonCommand2);
+        waiter.setOrder("desk1", bakeChickenWingCommand);
 
-        // 烤羊肉串太多了，取消两串
-        xiaoer.cancelOrder("desk1", bakeMuttonCommand2);
-        xiaoer.cancelOrder("desk1", bakeMuttonCommand2);
+        // 烤羊肉串太多了，取消一串
+        waiter.cancelOrder("desk1", bakeMuttonCommand2);
+
+        waiter.myNotify();
 
         // 吃完了，结账
-        xiaoer.bookOut("desk1");
+        waiter.bookOut("desk1");
     }
 }

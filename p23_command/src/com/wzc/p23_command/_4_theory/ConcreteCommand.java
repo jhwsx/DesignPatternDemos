@@ -9,7 +9,7 @@ package com.wzc.p23_command._4_theory;
  * @since 2019/12/08
  */
 public class ConcreteCommand extends Command {
-    private Receiver receiver;
+    private final Receiver receiver;
 
     public ConcreteCommand(Receiver receiver) {
         this.receiver = receiver;

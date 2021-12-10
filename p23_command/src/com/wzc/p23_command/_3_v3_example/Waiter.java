@@ -14,10 +14,14 @@ import java.util.Map;
  * @since 2019/12/08
  */
 public class Waiter {
-    private Command command;
 
     private Map<String, List<Command>> orderMap = new HashMap<>();
 
+    /**
+     * 设置订单
+     * @param desk 桌号
+     * @param command 命令类对象
+     */
     public void setOrder(String desk, Command command) {
         if (command instanceof BakeChickenWingCommand) {
             System.out.println("对不起，烤鸡翅没有了。");
@@ -33,6 +37,11 @@ public class Waiter {
         }
     }
 
+    /**
+     * 取消订单
+     * @param desk 桌号
+     * @param command 命令类对象
+     */
     public void cancelOrder(String desk, Command command) {
         if (orderMap.containsKey(desk)) {
             List<Command> commandList = orderMap.get(desk);
@@ -41,6 +50,10 @@ public class Waiter {
         }
     }
 
+    /**
+     * 结账
+     * @param desk 桌号
+     */
     public void bookOut(String desk) {
         List<Command> commandList = orderMap.get(desk);
         int total = 0;
@@ -50,6 +63,9 @@ public class Waiter {
         System.out.println(desk + ": " + total + " 元");
     }
 
+    /**
+     * 通知全部执行
+     */
     public void myNotify() {
         for (Map.Entry<String, List<Command>> entry : orderMap.entrySet()) {
             for (Command command : entry.getValue()) {
